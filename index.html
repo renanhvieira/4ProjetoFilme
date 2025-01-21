@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+
+    <!--AULA 10 - HEADER -->
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secundary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./src/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
             <h3 class="title--small" style="color: #f9f9f9;">
                  As melhores histórias em um só lugar.
             </h3>
@@ -151,9 +169,9 @@
     </section>
 
     <!--AULA 06 SESSAO DO SEU JEITO -->
-    <section class="watch-anywhere">
+    <section class="image-text-section">
         <img src="./dist/images/tv_pc_tablet_celular.png">
-        <div class="watch-anywhere__text__container">
+        <div class="image-text-section__text__container">
             <h2 class="title">  Assista do seu jeito </h2>
                <p class="text--big">
                 Assista onde quiser, em seu computador, TV ou tablet.
@@ -161,6 +179,141 @@
            
         </div>
     </section>
+
+
+    <!--AULA 07 SESSAO DO FILME REI LEÃO - texto por cima da foto - position absolute -->
+    <section class="image-text-section image-text-section--image--full-width">
+        <img src="./dist/images/fundo_rei_leao.png" alt="rei Leão"> 
+        <div class="image-text-section__text__container image-text-section--image--full-width__text__container ">
+            <h2 class="title"> Baixe filmes e séries </h2>
+               <p class="text--big">
+                Assista onde quiser, em seu computador, TV ou tablet.
+               </p>
+        </div>
+    </section>
+
+    <!--AULA 07 DISPONÍVEL NOS SEUS DISPOSITIVOS FAVORITOS -->
+    <section class="available-devices">
+        <h2 class="title">DISPONÍVEL NOS SEUS DISPOSITIVOS FAVORITOS</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/computador.png" alt="Computador">
+                <h4 class="title--small">Computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>Mac OS</li>
+                    <li>PC Windows</li>
+            
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/videogames.png" alt="Videogames">
+                <h4 class="title--small">Videogames</h4>
+                <ul class="text">
+                    <li>Playstation</li>
+                    <li>Xbox</li>
+                    <li>Nintendo</li>
+            
+                </ul>
+            </li>
+            
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/celular.png" alt="Celular">
+                <h4 class="title--small">Celular</h4>
+                <ul class="text">
+                    <li>Iphone</li>
+                    <li>Android</li>
+                    <li>Windows</li>
+            
+                </ul>
+            </li>
+
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/tv.png" alt="Televisão">
+                <h4 class="title--small">Televisão</h4>
+                <ul class="text">
+                    <li>Apple TV</li>
+                    <li>Samsung TV</li>
+                    <li>TV em geral</li>
+            
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+
+     <!--AULA 08 - FAQ - USOU JS PARA ABRIR E FECHAR A PERGUNTA -->
+     <section class="faq">
+        <h2 class="title">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta ?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta ?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Resposta da pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta ?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    Resposta da pergunta
+                </div>
+            </li>
+        </ul>
+        
+     </section>
+
+    <!--AULA 09 - RODAPÉ -->
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" >
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg">
+                        <select>
+                            <option>English</option>
+                            <option selected>Portugês</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                <a href="#" class="text--small">Termos e Condições de uso</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Política de privacidade</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Proteção de dados no Brasil</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Ajuda</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Sobre o Disney+</a>
+            </li>
+        </ul>
+        <p class="text--small">Disney + e The Walt Disney Company. Todos os direitos reservados
+        </p>
+        <p class="text--small">
+            Disney + éum serviço pago, baseado em assinatura e sujeito a termos e condições.
+        </p>
+        <p class="text--small">2024 - Disney+ e The Walt Disney Company. Todos os direitos reservados </p>
+        </div>
+      </footer>
+
     <script src="./src/main.js"></script>
 </body>
 </html>
+

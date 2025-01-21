@@ -2,7 +2,11 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
-@use 'watch-anywhere';
+@use 'available-devices';
+@use 'faq';
+@use 'footer';
+@use 'header';
+
 
 @font-face {
     font-family: Avenir;
@@ -21,6 +25,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 
@@ -74,15 +79,77 @@ body {
 
 .button {
    
-        display: block; /*para ficar em uma linha só ele */
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%; /* largura*/
         height: 60px; /*altura */
         font-size: 18px;
         color: variaveis.$corTextoSecundario;
-        background-color: #6421ff;
+        background-color: variaveis.$corDeFundoBotaoPrimario;
         text-transform: uppercase;
         border-radius: 4px;
-        margin-top: 2vw;
-        margin-bottom: 8px;
-    
+        text-decoration: none;
+        padding: 8px 14px;
+        letter-spacing: 1px;
+        border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+
+        
+
+        &--secundary {
+            background-color: variaveis.$corDeFundoBotaoSecundario;
+            border-color: variaveis.$corDeFundoBotaoSecundario;
+
+            
+        }
+
+        &--dark {
+            background-color: rgba(variaveis.$corDeFundoBotaoDark, 0.8);
+            border-color: variaveis.$corDeFundoBotaoSecundario;
+
+            &:hover {
+                background-color: variaveis.$corDeFundoBotaoSecundario;
+                color: variaveis.$corDeFundo;
+            }
+        }
+        
+}
+
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text__container {
+        padding: 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image--full-width {
+        display: block;
+        position: relative;
+       
+        img {
+            width: 100%;
+        }
+
+        &__text__container {
+            position: absolute;
+            top: 5.6vw;
+            height: 100%;
+            width: calc(50% - 5.6vw); /*calculo da quebra do texto no site original*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            left: 50%
+        }
+    }
 }
